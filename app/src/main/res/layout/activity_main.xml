@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.camera.view.CameraView
+        android:id="@+id/view_finder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/btnClose" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_height="wrap_content"
+        android:layout_width="96dp"
+        android:text="CLOSE"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/btnPhoto"/>
+
+
+    <Button
+        android:id="@+id/btnVideo"
+        android:layout_height="wrap_content"
+        android:layout_width="96dp"
+        android:text="VIDEO"
+        android:layout_toLeftOf="@id/btnStop"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_height="wrap_content"
+        android:layout_width="96dp"
+        android:text="STOP"
+        android:layout_toLeftOf="@id/btnPhoto"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/btnPhoto"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="PHOTO"
+        android:layout_height="wrap_content"
+        android:layout_width="96dp"/>
+
+</RelativeLayout>
